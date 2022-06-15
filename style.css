@@ -327,3 +327,27 @@ h1 {
     color: white;
     font-family: cursive;
 }
+#check{
+    display: none;
+}
+.content {
+    display: none;
+}
+label {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+#check:checked ~.content {
+    display: block;
+
+}
+#check:checked ~ label {
+display: none;
+}
+
+
+
